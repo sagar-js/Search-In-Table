@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Search</title>
+
+    <style>
+        html {
+            max-width: fit-content;
+            width: 100vw;
+            max-height: fit-content;
+            height: 100vh;
+        }
+
+        body {
+            background-color: rgb(90, 80, 80);
+            max-width: 100vw;
+            max-height: 100vh;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        input {
+            position: absolute;
+            top: 24%;
+            left: 46%;
+            width: 4vw;
+            font-size: 1vw;
+            padding: 0.5vw 0.5vw;
+            color: rgb(56, 52, 52);
+            background-color: rgb(243, 252, 216);
+            border-radius: 0.5vw;
+            border: none;
+            z-index: 10;
+            transition: 1s;
+        }
+
+        input:hover {
+            left: 27%;
+            padding: 0.5vw 2.5vw;
+            width: 40vw;
+        }
+
+        #table {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50vw;
+            height: 40vh;
+            padding: 10vh;
+            border: none;
+            background-color: rgb(250, 149, 8);
+        }
+
+        tr {
+            font-size: large;
+            color: white;
+            text-align: center;
+            border: none;
+        }
+
+        tr:hover {
+            background-color: black;
+            background-image: linear-gradient(black, rgb(255, 85, 0));
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="searchbar" onkeyup="search()" placeholder="Search Here.......">
+    <table id="table">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>LastName</td>
+            <td>Country</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sachin</td>
+            <td>Tendulkar</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>M S</td>
+            <td>Dhoni</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Virat</td>
+            <td>Kohali</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Steave</td>
+            <td>Smith</td>
+            <td>Austrailia</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Christ</td>
+            <td>Ronaldo</td>
+            <td>Portugal</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Lionel</td>
+            <td>Messi</td>
+            <td>Argentina</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Kyline</td>
+            <td>M'Bappe</td>
+            <td>France</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Rohit</td>
+            <td>Sharma</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>AJinky</td>
+            <td>Rahane</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Kane</td>
+            <td>Williamson</td>
+            <td>New Zeland</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Ben</td>
+            <td>Stokes</td>
+            <td>England</td>
+        </tr>
+    </table>
+
+    <ul onload="load()">
+        <li></li>
+    </ul>
+    <script src="./Angular.js"></script>
+</body>
+
+</html>
